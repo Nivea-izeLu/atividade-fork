@@ -50,16 +50,5 @@
         <h3> Mútiplos de 3 </h3>
         <p id="resultado"></p>
     </div>
-
-    <script>
-        let n = Number(prompt("Digite um número:"));
-        let resultado = "";
-        for (i=1; i<=n; i++){
-                if (i%3 == 0){
-                    resultado += "<strong>"+i+". </strong>";
-                }    
-        }
-        document.getElementById("resultado").innerHTML = "Entre 1 e "+n+" os números múltiplos de 3 são:<br>"+ resultado;
-    </script>
 </body>
 </html>
