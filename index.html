@@ -4,83 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            margin: 0%;
-            padding: 0%;    
-            width:100vw;
-            height:100vh;
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        #container{
-            top:50%;
-            left:50%;
-            transform: translate(50%,50%);
-        }
-        img{
-            width: 200px;
-            display:inline-block;
-        }
-        h3{
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-        div{
-            display: inline-block;   
-            width: fit-content;
-        }
-        label{
-            display: block;
-            margin-bottom: 20px ;
-        }
-        #resultado{
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <div id="container">
-        <img src="manicure.jpg">
-        <div>
-            <h3 id="titulo"> Agenda </h3>
-            <label for="nome">Nome:
-                <input type="text" id="nome" required>
-            </label>
-            <label for="email">Email: 
-                <input type="email" id="email" required>
-            </label>
-            <label for="procedi">Procedimento:
-                <select id="procedi" required>
-                    <option value="" disabled selected>Selecione</option>
-                    <option value="mani">Manicure</option>
-                    <option value="pedi">Pedicure</option>
-                    <option value="along">Progressiva</option>
-                    <option value="along">Escova</option>
-                    <option value="along">Corte</option>
-                    <option value="along">Descoloração</option>
-                    <option value="along">Hidratação profunda</option>
-                    <option value="along">Trançagem</option>
-                </select>
-            </label>
-            <label for="prof">Profissional:
-                <select id="prof" required>
-                    <option value="" disabled selected>Selecione</option>
-                    <option value="mani">Angela Amaral</option>
-                    <option value="pedi">Tadel Simas</option>
-                    <option value="along">Gisele Souza</option>
-                    <option value="along">Jonas Ribeiro</option>
-                    <option value="along">Maicon Mwangi</option>
-                    <option value="along">Ana Laura Oliveira</option>
-                    <option value="along">Silvia Brandão</option>
-                </select>
-            </label>
+  <div class="container">
+    <div class="left"></div>
+      <div class="right">
+        <div class="form-box">
+          <center><img src="Captura de tela 2025-06-01 204452.png" width="300px" ></center><br>
+          <form>
+            <input type="text" placeholder="Nome:" />
+            
+            <input type="tel" placeholder="Telefone:" />
 
-            <input type="date" id="dia" required>
-            <input type="time" id="hora" required>
-            <br>
-            <input type="button" id="botao" value="Agendar" onclick="frase()">
-           
+            <input type="email" placeholder="Email:" />
+
+            <input type="text" placeholder="Procedimento:" />
+
+            <input type="text" placeholder="Profissional:" />
+
+            <input type="date" name="dia" />
+
+            <input type="time" name="horario" />
+
+            <button type="submit"><b>Agendar</b></button>
+          </form>
         </div>
-         <p id="resultado"></p>
+      </div>
     </div>
    <script>
     
