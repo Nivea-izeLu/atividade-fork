@@ -41,21 +41,43 @@
     <div id="container">
         <img src="manicure.jpg">
         <div>
-            <h3 id="tit"> Nail Art</h3>
-            <label for="nome">Qual seu nome?
-                <input type="text" id="nome" placeholder="Digite seu nome">
+            <h3 id="titulo"> Agenda </h3>
+            <label for="nome">Nome:
+                <input type="text" id="nome" required>
             </label>
-            <label for="unha">Qual o formato das unhas?
-                <input type="text" id="unha" placeholder="Digite o formato">
+            <label for="email">Email: 
+                <input type="email" id="email" required>
             </label>
-            <label for="data">Qual o dia da manicure?
-                <input type="date" id="data" placeholder="Digite seu nome">
+            <label for="procedi">Procedimento:
+                <select id="procedi" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="mani">Manicure</option>
+                    <option value="pedi">Pedicure</option>
+                    <option value="along">Progressiva</option>
+                    <option value="along">Escova</option>
+                    <option value="along">Corte</option>
+                    <option value="along">Descoloração</option>
+                    <option value="along">Hidratação profunda</option>
+                    <option value="along">Trançagem</option>
+                </select>
             </label>
-            <label for="hora">Qual o melhor horário?
-                <input type="time" id="hora" placeholder="Digite seu nome">
+            <label for="prof">Profissional:
+                <select id="prof" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="mani">Angela Amaral</option>
+                    <option value="pedi">Tadel Simas</option>
+                    <option value="along">Gisele Souza</option>
+                    <option value="along">Jonas Ribeiro</option>
+                    <option value="along">Maicon Mwangi</option>
+                    <option value="along">Ana Laura Oliveira</option>
+                    <option value="along">Silvia Brandão</option>
+                </select>
             </label>
 
-            <input type="button" id="botao" value="Enviar" onclick="frase()">
+            <input type="date" id="dia" required>
+            <input type="time" id="hora" required>
+            <br>
+            <input type="button" id="botao" value="Agendar" onclick="frase()">
            
         </div>
          <p id="resultado"></p>
