@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="server.js"></script>
+    <title>Salão de beleza </title>
     <style>
         body{
             margin: 0%;
@@ -51,48 +52,36 @@
             <label for="procedi">Procedimento:
                 <select id="procedi" required>
                     <option value="" disabled selected>Selecione</option>
-                    <option value="mani">Manicure</option>
-                    <option value="pedi">Pedicure</option>
-                    <option value="along">Progressiva</option>
-                    <option value="along">Escova</option>
-                    <option value="along">Corte</option>
-                    <option value="along">Descoloração</option>
-                    <option value="along">Hidratação profunda</option>
-                    <option value="along">Trançagem</option>
+                    <option value="manicure">Manicure</option>
+                    <option value="pedicure">Pedicure</option>
+                    <option value="progressiva">Progressiva</option>
+                    <option value="escova">Escova</option>
+                    <option value="corte">Corte</option>
+                    <option value="descoloração">Descoloração</option>
+                    <option value="hidratação profunda">Hidratação profunda</option>
+                    <option value="trançagem">Trançagem</option>
                 </select>
             </label>
             <label for="prof">Profissional:
                 <select id="prof" required>
                     <option value="" disabled selected>Selecione</option>
-                    <option value="mani">Angela Amaral</option>
-                    <option value="pedi">Tadel Simas</option>
-                    <option value="along">Gisele Souza</option>
-                    <option value="along">Jonas Ribeiro</option>
-                    <option value="along">Maicon Mwangi</option>
-                    <option value="along">Ana Laura Oliveira</option>
-                    <option value="along">Silvia Brandão</option>
+                    <option value="Angela Amaral">Angela Amaral</option>
+                    <option value="Tadel Simas">Tadel Simas</option>
+                    <option value="Gisele Souza">Gisele Souza</option>
+                    <option value="Jonas Ribeiro">Jonas Ribeiro</option>
+                    <option value="Maicon Mwangi">Maicon Mwangi</option>
+                    <option value="Ana Laura Oliveira">Ana Laura Oliveira</option>
+                    <option value="Silva Brandão">Silvia Brandão</option>
                 </select>
             </label>
 
             <input type="date" id="dia" required>
             <input type="time" id="hora" required>
             <br>
-            <input type="button" id="botao" value="Agendar" onclick="frase()">
+            <input type="button" id="meubotao" value="Agendar" onclick="frase()">
            
         </div>
          <p id="resultado"></p>
     </div>
-   <script>
-    
-    function frase(){
-        n = document.getElementById("nome").value;
-        u = document.getElementById("unha").value;
-        d = document.getElementById("data").value;
-        h = document.getElementById("hora").value;
-
-        document.getElementById("resultado").innerHTML = "Olá "+n+", Nossa sessão as "+h+ " no dia "+d+ " para fazer seu alongamento <br> no formato "+u+" está marcada!!"
-    }
-    ///
-   </script>
 </body>
 </html>
