@@ -5,43 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="server.js"></script>
     <title>Salão de beleza </title>
-    <style>
-        body{
-            margin: 0%;
-            padding: 0%;    
-            width:100vw;
-            height:100vh;
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        #container{
-            top:50%;
-            left:50%;
-            transform: translate(50%,50%);
-        }
-        img{
-            width: 200px;
-            display:inline-block;
-        }
-        h3{
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-        div{
-            display: inline-block;   
-            width: fit-content;
-        }
-        label{
-            display: block;
-            margin-bottom: 20px ;
-        }
-        #resultado{
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
-    <div id="container">
-        <img src="manicure.jpg">
-        <div>
+    <div class="container" id="container">
+      <div class="left"></div>
+      <div class="right">
+       <div class="form-box">
+          <center><img src="Captura de tela 2025-06-01 204452.png" width="300px" ></center><br>
+          <form>
+          <div>
             <h3 id="titulo"> Agenda </h3>
             <label for="nome">Nome:
                 <input type="text" id="nome" required>
@@ -79,9 +51,10 @@
             <input type="time" id="hora" required>
             <br>
             <input type="button" id="meubotao" value="Agendar" onclick="frase()">
-           
         </div>
-         <p id="resultado"></p>
+       </form>
+      </div>
     </div>
+  </div>
 </body>
 </html>
